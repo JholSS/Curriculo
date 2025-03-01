@@ -1,0 +1,89 @@
+.txt{
+  text-align: center;
+  margin-top: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  text-decoration: underline;
+  font-size: 56;
+  font-style:oblique;
+  color:rgb(241, 240, 240);
+}
+
+#pfl{
+
+  width: 220;
+  margin-top: 30;
+  border: 6px solid;
+  border-color: rgb(59, 53, 73);
+  border-radius: 50%;
+}
+
+.titulo{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+  text-align:left ;
+  color: white; 
+  float:inline-start;
+  margin-top:55px ;
+  margin-left: 65; 
+}
+.titulo p{
+  text-align: center;
+
+}
+.snd{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:aqua;
+  text-align: center;
+  margin-top: 80px;
+}
+
+
+.snd #btm{
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;         /*Inicio*/
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.snd #btm::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px; /*Largura*/
+  width: 0;
+  background-color: #686868;
+  transition: 0.5s ease;
+}
+
+.snd #btm:hover {
+  color: #1e1e2b;             /* Cor da fonte e o tempo de transição para troca de cor*/
+  transition-delay: 0.5s;
+}
+
+.snd #btm:hover::before {
+  width: 100%;                /* Linha inferior que aparece*/
+}
+.snd #btm::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;                        /*Define a cor que o botão será preenchido e o tempo de transição */
+  height: 0;
+  width: 100%;
+  background-color: aqua;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+
+.snd #btm:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;           /* Transição do botão*/
+  
+}
+  

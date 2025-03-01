@@ -1,0 +1,98 @@
+#destino .info{
+    display:flex;
+    align-items: flex-start; /* Alinha todos os itens ao topo */
+    justify-content: flex-start; /* Alinha os itens no início */
+}
+#destino img{
+    border: 5px solid;
+    border-color: gray;
+    margin-right: 150px;
+    width: 350px;
+}
+
+#destino .back{
+    margin-top: 200;
+    margin-left: 100;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+#destino .svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+}
+  
+  #destino .svgIcon path {
+    fill: white;
+  }
+  
+#destino .back :hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+  }
+  
+#destino .back:hover .svgIcon {
+    width: 20px; 
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+  
+#destino .back::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Voltar";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+}
+  
+#destino .back:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+ }
+
+ #destino #link{
+    color: white;
+    margin-left: 60px;
+}
+
+#destino .skill{
+    color: white;
+    text-align:justify;
+    border: 4px solid;
+    padding: 10px;
+    margin:auto;
+    width: fit-content;
+    display: inline-block;
+        
+}
+
+#destino .comps{
+    color: white;
+    text-align:justify;
+    border: 4px solid;
+    padding: 10px;
+    margin:auto;
+    width: fit-content;
+    display: inline-block;    
+}
+
+

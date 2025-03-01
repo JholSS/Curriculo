@@ -1,0 +1,134 @@
+
+#cont button{
+    margin-top: 350px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+#cont .svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+}
+#cont .svgIcon path {
+    fill: white;
+}
+#cont .back :hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+}
+#cont .back:hover .svgIcon {
+    width: 20px; 
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}  
+#cont .back::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Voltar";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+}  
+#cont .back:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+
+#cont .card {
+    margin-top: 200px;
+    margin-left:100px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+  
+  /* for all social containers*/
+#cont .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+  /* instagram*/
+#cont .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+  
+  /* linkdin*/
+#cont .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+  /* Whatsapp*/
+ #cont .containerFour:hover {
+    background-color: #25d366;
+    transition-duration: 0.3s;
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+  
+ #cont .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+  
+ #cont .socialSvg {
+    width: 17px;
+}
+  
+#cont  .socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+  
+#cont .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+  
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+#cont h2{
+    color:navy;
+    text-align:center;
+}
